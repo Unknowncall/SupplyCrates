@@ -10,12 +10,16 @@ public class SupplyCrate {
 	private ItemStack itemStack;
 	private ArrayList<Reward> rewards;
 	private ArrayList<Reward> opRewards;
+	private int totalRewardChance;
+	private int totalOPRewardChance;
 
-	public SupplyCrate(String name, ItemStack itemStack, ArrayList<Reward> rewards, ArrayList<Reward> opRewards) {
+	public SupplyCrate(String name, ItemStack itemStack, ArrayList<Reward> rewards, ArrayList<Reward> opRewards, int totalRewardChance, int totalOPRewardChance) {
 		this.name = name;
 		this.itemStack = itemStack;
 		this.rewards = rewards;
 		this.opRewards = opRewards;
+		this.totalRewardChance = totalRewardChance;
+		this.totalOPRewardChance = totalOPRewardChance;
 	}
 
 	public String getName() {
@@ -48,6 +52,22 @@ public class SupplyCrate {
 
 	public void setOpRewards(ArrayList<Reward> opRewards) {
 		this.opRewards = opRewards;
+	}
+
+	public int getTotalRewardChance() {
+		return totalRewardChance;
+	}
+
+	public void setTotalRewardChance(int totalRewardChance) {
+		this.totalRewardChance = totalRewardChance;
+	}
+
+	public int getTotalOPRewardChance() {
+		return totalOPRewardChance;
+	}
+
+	public void setTotalOPRewardChance(int totalOPRewardChance) {
+		this.totalOPRewardChance = totalOPRewardChance;
 	}
 
 }

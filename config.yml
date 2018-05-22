@@ -12,4 +12,6 @@ gui:
     - '31'
     - '32'
     - '40*'
+  default_reward_item: CHEST name:Default_Reward_#%number% lore:|Click_to_open|_
+  op_reward_item: ENDER_CHEST name:OP_Reward_#%number% lore:|Click_to_open|_
 
